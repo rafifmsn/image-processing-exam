@@ -18,3 +18,7 @@ pip install -r requirements.txt
 cd Number-2-Face-Attendance-Haar-Cascade
 streamlit run app.py
 ```
+
+# Usage Face Attendance System
+
+![Face Attendance System](./Number-2-Face-Attendance-Haar-Cascade/Face%20Attendance%20System.png)

@@ -10,8 +10,12 @@ st.set_page_config(page_title="Face Attendance", layout="centered")
 st.title("🎓 Simple Face Attendance System")
 
 FACE_CASCADE = cv2.CascadeClassifier(
-    "haarcascade_frontalface_default.xml"
+    cv2.data.haarcascades + "haarcascade_frontalface_default.xml"
 )
+
+if FACE_CASCADE.empty():
+    st.error("Haar Cascade file not loaded properly.")
+    st.stop()
 
 THRESHOLD = 60  # lower = stricter
 
