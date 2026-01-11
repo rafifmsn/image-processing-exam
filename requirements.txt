@@ -1,0 +1,7 @@
+ipykernel
+streamlit
+opencv-contrib-python-headless
+numpy
+matplotlib
+ipywidgets
+requests
